@@ -7,6 +7,86 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="moments.css" />
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <!-- Surprise opening screen -->
+  <section id="gate" class="gate">
+    <div class="gate-inner">
+      <div class="big-heart">&#10084;</div>
+      <p id="intro-text"></p>
+      <button id="open-btn" class="btn">Tap to open</button>
+    </div>
+  </section>
+
+  <main id="site" class="hidden">
+    <!-- Hero -->
+    <header class="hero">
+      <p class="small">Happy Monthsary</p>
+      <h1 id="her-name"></h1>
+      <p id="tagline" class="tagline"></p>
+      <div class="counter">
+        <div><span id="c-months">0</span><small>months</small></div>
+        <div><span id="c-days">0</span><small>days</small></div>
+        <div><span id="c-total">0</span><small>total days</small></div>
+      </div>
+      <a href="#letter" class="scroll">&#8595;</a>
+    </header>
+
+    <!-- Letter -->
+    <section id="letter" class="section">
+      <h2 id="letter-title"></h2>
+      <div class="envelope-wrap">
+        <div id="envelope" class="envelope">
+          <div class="flap"></div>
+          <div class="env-heart">&#10084;</div>
+          <p class="env-hint">Tap to read</p>
+        </div>
+        <article id="paper" class="paper hidden"></article>
+      </div>
+    </section>
+
+    <!-- Moments -->
+    <section id="moments" class="section">
+      <h2 id="moments-title"></h2>
+      <form id="moment-form" class="moment-form hidden">
+        <input id="mo-caption" class="wide" type="text" placeholder="Write a caption for this video..." maxlength="300" />
+        <input id="mo-author" type="text" placeholder="Your name" maxlength="40" />
+        <label class="btn pick">Choose video
+          <input id="mo-file" type="file" accept="video/*" hidden />
+        </label>
+        <button id="mo-submit" class="btn" type="submit">Add video</button>
+      </form>
+      <p id="mo-status" class="moment-status"></p>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <!-- Reasons -->
+    <section class="section">
+      <h2 id="reasons-title"></h2>
+      <div id="reasons" class="reasons"></div>
+    </section>
+
+    <footer class="footer">
+      <p id="footer-text"></p>
+      <button id="love-btn" class="btn">Click if you love me &#10084;</button>
+    </footer>
+  </main>
+
+  <script src="moments.js"></script>
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="album.css" />
   <link rel="stylesheet" href="moments.css" />
 </head>
